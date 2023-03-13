@@ -267,7 +267,7 @@ ref_delta_P = ${fparse f * L / D * rho * bulk_u^2 / 2}
     type = PointValue
     variable = 'pressure'
     point = '${fparse total_len - L} 0 0'
-  []
+  [] 
   [reference_delta_P]
     type = Receiver
     default = ${ref_delta_P}

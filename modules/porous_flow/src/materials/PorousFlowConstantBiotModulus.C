@@ -19,6 +19,7 @@ PorousFlowConstantBiotModulus::validParams()
       "biot_coefficient", 1.0, "biot_coefficient>=0 & biot_coefficient<=1", "Biot coefficient");
   params.addRangeCheckedParam<Real>(
       "fluid_bulk_modulus", 2.0E9, "fluid_bulk_modulus>0", "Fluid bulk modulus");
+  params.addCoupledVar("variable_fluid_bulk_modulus", "The variable that holds the fluid bulk modulus.");
   params.addRangeCheckedParam<Real>("solid_bulk_compliance",
                                     0.0,
                                     "solid_bulk_compliance>=0.0",
@@ -36,6 +37,7 @@ PorousFlowConstantBiotModulus::PorousFlowConstantBiotModulus(const InputParamete
   : PorousFlowMaterialVectorBase(parameters),
     _biot_coefficient(getParam<Real>("biot_coefficient")),
     _fluid_bulk_modulus(getParam<Real>("fluid_bulk_modulus")),
+    _variable_fluid_bulk_modulus(isCoupled("variable_fluid_bulk_modulus") ? coupledValue("variable_fluid_bulk_modulus") : _zero),
     _solid_bulk_compliance(getParam<Real>("solid_bulk_compliance")),
     _porosity(_nodal_material ? getMaterialProperty<Real>("PorousFlow_porosity_nodal")
                               : getMaterialProperty<Real>("PorousFlow_porosity_qp")),
@@ -50,9 +52,13 @@ PorousFlowConstantBiotModulus::PorousFlowConstantBiotModulus(const InputParamete
 void
 PorousFlowConstantBiotModulus::initQpStatefulProperties()
 {
+  Real fluid_bulk_modulus = _fluid_bulk_modulus;
+  if (_variable_fluid_bulk_modulus[_qp] != 0.0)
+    fluid_bulk_modulus = _variable_fluid_bulk_modulus[_qp];
+
   _biot_modulus[_qp] = 1.0 / ((1.0 - _biot_coefficient) * (_biot_coefficient - _porosity[_qp]) *
                                   _solid_bulk_compliance +
-                              _porosity[_qp] / _fluid_bulk_modulus);
+                              _porosity[_qp] / fluid_bulk_modulus);
 }
 
 void

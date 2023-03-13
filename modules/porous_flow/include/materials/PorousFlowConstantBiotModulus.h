@@ -38,6 +38,8 @@ protected:
   /// Fluid bulk modulus
   const Real _fluid_bulk_modulus;
 
+  const VariableValue & _variable_fluid_bulk_modulus;
+
   /// Solid bulk compliance
   const Real _solid_bulk_compliance;
 
