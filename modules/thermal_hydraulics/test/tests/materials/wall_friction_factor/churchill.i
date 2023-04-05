@@ -29,9 +29,8 @@
     D_h = D_h
     mu = mu
     f_D = 'f_D'
-    rhoA = rhoA
-    rhouA = rhouA
-    rhoEA = rhoEA
+    rhoA = pressure
+    rhouA = vel_y
     roughness = 0.5
   []
 []
