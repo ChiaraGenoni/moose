@@ -1,0 +1,75 @@
+{
+    "app_name": "main",
+    "current_time": "Tue Aug 29 10:56:41 2023",
+    "executable": "/home/genoc/projects/moose/modules/combined/combined-opt",
+    "executable_time": "Tue Aug 15 15:42:44 2023",
+    "libmesh_version": "14633497ea867c56053d1ea7a1fbe0442727eb24",
+    "moose_version": "git commit a96cca0a04 on 2023-03-17",
+    "petsc_version": "3.16.5",
+    "reporters": {
+        "results": {
+            "type": "StochasticReporter",
+            "values": {
+                "results:acc:inlet-p:value": {
+                    "row_begin": 0,
+                    "row_end": 2,
+                    "type": "std::vector<std::vector<double>>"
+                },
+                "results:acc:outlet-p:value": {
+                    "row_begin": 0,
+                    "row_end": 2,
+                    "type": "std::vector<std::vector<double>>"
+                },
+                "results:acc:time:value": {
+                    "row_begin": 0,
+                    "row_end": 2,
+                    "type": "std::vector<std::vector<double>>"
+                },
+                "results:converged": {
+                    "row_begin": 0,
+                    "row_end": 2,
+                    "type": "std::vector<bool>"
+                }
+            }
+        },
+        "samples": {
+            "values": {
+                "csv_0": {
+                    "type": "std::vector<double>"
+                },
+                "csv_1": {
+                    "type": "std::vector<double>"
+                }
+            }
+        }
+    },
+    "slepc_version": "3.16.2",
+    "time_steps": [
+        {
+            "results": {
+                "results:acc:inlet-p:value": [
+                    [],
+                    []
+                ],
+                "results:acc:outlet-p:value": [
+                    [],
+                    []
+                ],
+                "results:acc:time:value": [
+                    [],
+                    []
+                ],
+                "results:converged": [
+                    false,
+                    false
+                ]
+            },
+            "samples": {
+                "csv_0": [],
+                "csv_1": []
+            },
+            "time": 0.0,
+            "time_step": 0
+        }
+    ]
+}

@@ -1,0 +1,676 @@
+Fri Sep 22 16:28:51 MDT 2023
+/home/genoc/projects/moose/smashed_pellets/V&V/CT5_Darcy_copy/1000psi
+48
+Framework Information:
+MOOSE Version:           git commit a96cca0a04 on 2023-03-17
+LibMesh Version:         14633497ea867c56053d1ea7a1fbe0442727eb24
+PETSc Version:           3.16.5
+SLEPc Version:           3.16.2
+Current Time:            Fri Sep 22 16:28:57 2023
+Executable Timestamp:    Tue Aug 15 15:42:44 2023
+
+Parallelism:
+  Num Processors:          48
+  Num Threads:             1
+
+Mesh: 
+  Parallel Type:           replicated
+  Mesh Dimension:          1
+  Spatial Dimension:       1
+  Nodes:                   
+    Total:                 2
+    Local:                 2
+    Min/Max/Avg:           0/2/0
+  Elems:                   
+    Total:                 1
+    Local:                 1
+    Min/Max/Avg:           0/1/0
+  Num Subdomains:          1
+  Num Partitions:          1
+  Partitioner:             metis
+
+Execution Information:
+  Executioner:             Transient
+  TimeStepper:             ConstantDT
+  TimeIntegrator:          ImplicitEuler
+  Solver Mode:             Preconditioned JFNK
+
+[36mrunner00: [39m
+[36mrunner00: [39m
+[36mrunner00: [39mActive Materials:
+[36mrunner00: [39m    Subdomain:  (0)
+[36mrunner00: [39m      Material Name:       drho_dt
+[36mrunner00: [39m      Property Names:      
+[36mrunner00: [39m      Material Name:       factor_porous
+[36mrunner00: [39m      Property Names:      
+[36mrunner00: [39m      Material Name:       sutherland_mu
+[36mrunner00: [39m      Property Names:      
+[36mrunner00: [39m
+[36mrunner00: [39m    Active Face Materials:
+[36mrunner00: [39m                           
+[36mrunner00: [39mActive Neighboring Materials:
+[36mrunner00: [39m                           
+[36mrunner00: [39mActive Boundary Materials:
+[36mrunner00: [39m                           
+[36mrunner00: [39mParallelism:
+[36mrunner00: [39m  Num Processors:          5
+[36mrunner00: [39m  Num Threads:             1
+[36mrunner00: [39m
+[36mrunner00: [39mMesh: 
+[36mrunner00: [39m  Parallel Type:           replicated
+[36mrunner00: [39m  Mesh Dimension:          2
+[36mrunner00: [39m  Spatial Dimension:       2
+[36mrunner00: [39m  Nodes:                   
+[36mrunner00: [39m    Total:                 2651
+[36mrunner00: [39m    Local:                 539
+[36mrunner00: [39m    Min/Max/Avg:           517/539/530
+[36mrunner00: [39m  Elems:                   
+[36mrunner00: [39m    Total:                 2400
+[36mrunner00: [39m    Local:                 480
+[36mrunner00: [39m    Min/Max/Avg:           480/480/480
+[36mrunner00: [39m  Num Subdomains:          1
+[36mrunner00: [39m  Num Partitions:          5
+[36mrunner00: [39m  Partitioner:             metis
+[36mrunner00: [39m
+[36mrunner00: [39mNonlinear System:
+[36mrunner00: [39m  Num DOFs:                7200
+[36mrunner00: [39m  Num Local DOFs:          1440
+[36mrunner00: [39m  Variables:               { "superficial_vel_x" "superficial_vel_y" "pressure" } 
+[36mrunner00: [39m  Finite Element Types:    "MONOMIAL" 
+[36mrunner00: [39m  Approximation Orders:    "CONSTANT" 
+[36mrunner00: [39m
+[36mrunner00: [39mAuxiliary System:
+[36mrunner00: [39m  Num DOFs:                9600
+[36mrunner00: [39m  Num Local DOFs:          1920
+[36mrunner00: [39m  Variables:               { "velocity_norm" "porosity_var" "viscosity_var" "Reynolds" } 
+[36mrunner00: [39m  Finite Element Types:    "MONOMIAL" 
+[36mrunner00: [39m  Approximation Orders:    "CONSTANT" 
+[36mrunner00: [39m
+[36mrunner00: [39mExecution Information:
+[36mrunner00: [39m  Executioner:             Transient
+[36mrunner00: [39m  TimeStepper:             ConstantDT
+[36mrunner00: [39m  TimeIntegrator:          ImplicitEuler
+[36mrunner00: [39m  Solver Mode:             NEWTON
+[36mrunner00: [39m  MOOSE Preconditioner:    SMP (auto)
+[36mrunner00: [39m
+[36mrunner00: [39m
+[36mrunner00: [39mTime Step 0, time = 0
+[36mrunner00: [39m
+[36mrunner00: [39mPostprocessor Values:
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m| time           | Re             | inlet-p        | outlet-p       |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m|   0.000000e+00 |   0.000000e+00 |   6.981537e+06 |   7.002980e+06 |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m
+[36mrunner00: [39m
+[36mrunner00: [39m
+[36mrunner00: [39mConsumed Material Properties:
+[36mrunner00: [39m                           
+
+[33m
+*** Warning ***
+/home/genoc/projects/moose/smashed_pellets/V&V/CT5_Darcy_copy/1000psi/model_pellets.i:1: unused parameter 'viscosity'
+[39m
+
+Time Step 0, time = 0
+
+Time Step 1, time = 1, dt = 1
+[36mrunner00: [39m
+[36mrunner00: [39mTime Step 1, time = 1, dt = 1
+[36mrunner00: [39m
+[36mrunner00: [39mPerforming automatic scaling calculation
+[36mrunner00: [39m
+[36mrunner00: [39m 0 Nonlinear |R| = [32m3.054061e+06[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.054061e+06[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.751230e-08[39m
+[36mrunner00: [39m 1 Nonlinear |R| = [32m8.907540e+05[39m
+[36mrunner00: [39m      0 Linear |R| = [32m8.907540e+05[39m
+[36mrunner00: [39m      1 Linear |R| = [32m4.042213e-09[39m
+[36mrunner00: [39m 2 Nonlinear |R| = [32m1.948000e+05[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.948000e+05[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.638167e-09[39m
+[36mrunner00: [39m 3 Nonlinear |R| = [32m2.741929e+04[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.741929e+04[39m
+[36mrunner00: [39m      1 Linear |R| = [32m3.198526e-10[39m
+[36mrunner00: [39m 4 Nonlinear |R| = [32m2.930789e+03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.930789e+03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m3.555441e-11[39m
+[36mrunner00: [39m 5 Nonlinear |R| = [32m2.394558e+02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.394558e+02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m3.242146e-12[39m
+[36mrunner00: [39m 6 Nonlinear |R| = [32m2.394182e+01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.394182e+01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m3.233543e-13[39m
+[36mrunner00: [39m 7 Nonlinear |R| = [32m2.394144e+00[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.394144e+00[39m
+[36mrunner00: [39m      1 Linear |R| = [32m3.299492e-14[39m
+[36mrunner00: [39m 8 Nonlinear |R| = [32m2.394141e-01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.394141e-01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m3.273684e-15[39m
+[36mrunner00: [39m 9 Nonlinear |R| = [32m2.394140e-02[39m
+[36mrunner00: [39m[32m Solve Converged![39m
+[36mrunner00: [39m
+[36mrunner00: [39mOutlier Variable Residual Norms:
+[36mrunner00: [39m  pressure: [31m2.394140e-02[39m
+[36mrunner00: [39m
+[36mrunner00: [39mPostprocessor Values:
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m| time           | Re             | inlet-p        | outlet-p       |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m|   0.000000e+00 |   0.000000e+00 |   6.981537e+06 |   7.002980e+06 |
+[36mrunner00: [39m|   1.000000e+00 |   0.000000e+00 |   6.981537e+06 |   3.555600e+06 |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m
+[32m Solve Skipped![39m
+
+Time Step 2, time = 2, dt = 1
+[36mrunner00: [39m
+[36mrunner00: [39mTime Step 2, time = 2, dt = 1
+[36mrunner00: [39m 0 Nonlinear |R| = [32m1.006340e+06[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.006340e+06[39m
+[36mrunner00: [39m      1 Linear |R| = [32m7.407908e-09[39m
+[36mrunner00: [39m 1 Nonlinear |R| = [32m3.010944e+05[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.010944e+05[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.451863e-09[39m
+[36mrunner00: [39m 2 Nonlinear |R| = [32m7.551709e+04[39m
+[36mrunner00: [39m      0 Linear |R| = [32m7.551709e+04[39m
+[36mrunner00: [39m      1 Linear |R| = [32m6.940246e-10[39m
+[36mrunner00: [39m 3 Nonlinear |R| = [32m1.312323e+04[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.312323e+04[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.981445e-10[39m
+[36mrunner00: [39m 4 Nonlinear |R| = [32m1.530662e+03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.530662e+03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m2.195587e-11[39m
+[36mrunner00: [39m 5 Nonlinear |R| = [32m1.526424e+02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.526424e+02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m2.179641e-12[39m
+[36mrunner00: [39m 6 Nonlinear |R| = [32m1.526016e+01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.526016e+01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m2.567353e-13[39m
+[36mrunner00: [39m 7 Nonlinear |R| = [32m1.525975e+00[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.525975e+00[39m
+[36mrunner00: [39m      1 Linear |R| = [32m2.226355e-14[39m
+[36mrunner00: [39m 8 Nonlinear |R| = [32m1.525971e-01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.525971e-01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m2.307335e-15[39m
+[36mrunner00: [39m 9 Nonlinear |R| = [32m1.525970e-02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.525970e-02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m2.258657e-16[39m
+[36mrunner00: [39m10 Nonlinear |R| = [32m1.525970e-03[39m
+[36mrunner00: [39m[32m Solve Converged![39m
+[36mrunner00: [39m
+[36mrunner00: [39mOutlier Variable Residual Norms:
+[36mrunner00: [39m  pressure: [31m1.525970e-03[39m
+[36mrunner00: [39m
+[36mrunner00: [39mPostprocessor Values:
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m| time           | Re             | inlet-p        | outlet-p       |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m|   0.000000e+00 |   0.000000e+00 |   6.981537e+06 |   7.002980e+06 |
+[36mrunner00: [39m|   1.000000e+00 |   0.000000e+00 |   6.981537e+06 |   3.555600e+06 |
+[36mrunner00: [39m|   2.000000e+00 |   7.471467e-01 |   6.962201e+06 |   1.376856e+06 |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m
+[32m Solve Skipped![39m
+
+Time Step 3, time = 3, dt = 1
+[36mrunner00: [39m
+[36mrunner00: [39mTime Step 3, time = 3, dt = 1
+[36mrunner00: [39m 0 Nonlinear |R| = [32m1.470662e+05[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.470662e+05[39m
+[36mrunner00: [39m      1 Linear |R| = [32m2.814205e-09[39m
+[36mrunner00: [39m 1 Nonlinear |R| = [32m4.190890e+04[39m
+[36mrunner00: [39m      0 Linear |R| = [32m4.190890e+04[39m
+[36mrunner00: [39m      1 Linear |R| = [32m2.369310e-10[39m
+[36mrunner00: [39m 2 Nonlinear |R| = [32m8.985199e+03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m8.985199e+03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.093442e-10[39m
+[36mrunner00: [39m 3 Nonlinear |R| = [32m1.266804e+03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.266804e+03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.866398e-11[39m
+[36mrunner00: [39m 4 Nonlinear |R| = [32m2.975543e+02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.975543e+02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m3.333357e-12[39m
+[36mrunner00: [39m 5 Nonlinear |R| = [32m2.979756e+01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.979756e+01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m3.560820e-13[39m
+[36mrunner00: [39m 6 Nonlinear |R| = [32m2.980184e+00[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.980184e+00[39m
+[36mrunner00: [39m      1 Linear |R| = [32m3.735211e-14[39m
+[36mrunner00: [39m 7 Nonlinear |R| = [32m2.980227e-01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.980227e-01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m3.324770e-15[39m
+[36mrunner00: [39m 8 Nonlinear |R| = [32m2.980231e-02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.980231e-02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m3.461414e-16[39m
+[36mrunner00: [39m 9 Nonlinear |R| = [32m2.980232e-03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.980232e-03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m3.684639e-17[39m
+[36mrunner00: [39m10 Nonlinear |R| = [32m2.980232e-04[39m
+[36mrunner00: [39m[32m Solve Converged![39m
+[36mrunner00: [39m
+[36mrunner00: [39mOutlier Variable Residual Norms:
+[36mrunner00: [39m  pressure: [31m2.980232e-04[39m
+[36mrunner00: [39m
+[36mrunner00: [39mPostprocessor Values:
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m| time           | Re             | inlet-p        | outlet-p       |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m|   0.000000e+00 |   0.000000e+00 |   6.981537e+06 |   7.002980e+06 |
+[36mrunner00: [39m|   1.000000e+00 |   0.000000e+00 |   6.981537e+06 |   3.555600e+06 |
+[36mrunner00: [39m|   2.000000e+00 |   7.471467e-01 |   6.962201e+06 |   1.376856e+06 |
+[36mrunner00: [39m|   3.000000e+00 |   9.550801e-01 |   6.905193e+06 |   6.184320e+05 |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m
+[32m Solve Skipped![39m
+
+Time Step 4, time = 4, dt = 1
+[36mrunner00: [39m
+[36mrunner00: [39mTime Step 4, time = 4, dt = 1
+[36mrunner00: [39m 0 Nonlinear |R| = [32m3.316275e+04[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.316275e+04[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.717376e-09[39m
+[36mrunner00: [39m 1 Nonlinear |R| = [32m7.984596e+03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m7.984596e+03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.507288e-10[39m
+[36mrunner00: [39m 2 Nonlinear |R| = [32m1.318927e+03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.318927e+03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.965161e-11[39m
+[36mrunner00: [39m 3 Nonlinear |R| = [32m3.310211e+02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.310211e+02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m4.301597e-12[39m
+[36mrunner00: [39m 4 Nonlinear |R| = [32m3.303677e+01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.303677e+01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m4.518285e-13[39m
+[36mrunner00: [39m 5 Nonlinear |R| = [32m3.303034e+00[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.303034e+00[39m
+[36mrunner00: [39m      1 Linear |R| = [32m4.408509e-14[39m
+[36mrunner00: [39m 6 Nonlinear |R| = [32m3.302970e-01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.302970e-01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m4.400908e-15[39m
+[36mrunner00: [39m 7 Nonlinear |R| = [32m3.302964e-02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.302964e-02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m4.591214e-16[39m
+[36mrunner00: [39m 8 Nonlinear |R| = [32m3.302963e-03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.302963e-03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m4.519376e-17[39m
+[36mrunner00: [39m 9 Nonlinear |R| = [32m3.302963e-04[39m
+[36mrunner00: [39m[32m Solve Converged![39m
+[36mrunner00: [39m
+[36mrunner00: [39mOutlier Variable Residual Norms:
+[36mrunner00: [39m  pressure: [31m3.302963e-04[39m
+[36mrunner00: [39m
+[36mrunner00: [39mPostprocessor Values:
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m| time           | Re             | inlet-p        | outlet-p       |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m|   0.000000e+00 |   0.000000e+00 |   6.981537e+06 |   7.002980e+06 |
+[36mrunner00: [39m|   1.000000e+00 |   0.000000e+00 |   6.981537e+06 |   3.555600e+06 |
+[36mrunner00: [39m|   2.000000e+00 |   7.471467e-01 |   6.962201e+06 |   1.376856e+06 |
+[36mrunner00: [39m|   3.000000e+00 |   9.550801e-01 |   6.905193e+06 |   6.184320e+05 |
+[36mrunner00: [39m|   4.000000e+00 |   9.593873e-01 |   6.807981e+06 |   3.081680e+05 |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m
+[32m Solve Skipped![39m
+
+Time Step 5, time = 5, dt = 1
+[36mrunner00: [39m
+[36mrunner00: [39mTime Step 5, time = 5, dt = 1
+[36mrunner00: [39m 0 Nonlinear |R| = [32m8.226824e+03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m8.226824e+03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.342944e-09[39m
+[36mrunner00: [39m 1 Nonlinear |R| = [32m1.331157e+03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.331157e+03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.315354e-10[39m
+[36mrunner00: [39m 2 Nonlinear |R| = [32m2.713253e+02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.713253e+02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.435127e-11[39m
+[36mrunner00: [39m 3 Nonlinear |R| = [32m2.696885e+01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.696885e+01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.417364e-12[39m
+[36mrunner00: [39m 4 Nonlinear |R| = [32m2.695267e+00[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.695267e+00[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.428338e-13[39m
+[36mrunner00: [39m 5 Nonlinear |R| = [32m2.695106e-01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.695106e-01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.482597e-14[39m
+[36mrunner00: [39m 6 Nonlinear |R| = [32m2.695090e-02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.695090e-02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.563794e-15[39m
+[36mrunner00: [39m 7 Nonlinear |R| = [32m2.695088e-03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.695088e-03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.432491e-16[39m
+[36mrunner00: [39m 8 Nonlinear |R| = [32m2.695088e-04[39m
+[36mrunner00: [39m[32m Solve Converged![39m
+[36mrunner00: [39m
+[36mrunner00: [39mOutlier Variable Residual Norms:
+[36mrunner00: [39m  pressure: [31m2.695088e-04[39m
+[36mrunner00: [39m
+[36mrunner00: [39mPostprocessor Values:
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m| time           | Re             | inlet-p        | outlet-p       |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m|   0.000000e+00 |   0.000000e+00 |   6.981537e+06 |   7.002980e+06 |
+[36mrunner00: [39m|   1.000000e+00 |   0.000000e+00 |   6.981537e+06 |   3.555600e+06 |
+[36mrunner00: [39m|   2.000000e+00 |   7.471467e-01 |   6.962201e+06 |   1.376856e+06 |
+[36mrunner00: [39m|   3.000000e+00 |   9.550801e-01 |   6.905193e+06 |   6.184320e+05 |
+[36mrunner00: [39m|   4.000000e+00 |   9.593873e-01 |   6.807981e+06 |   3.081680e+05 |
+[36mrunner00: [39m|   5.000000e+00 |   9.302610e-01 |   6.679968e+06 |   2.047460e+05 |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m
+[32m Solve Skipped![39m
+
+Time Step 6, time = 6, dt = 1
+[36mrunner00: [39m
+[36mrunner00: [39mTime Step 6, time = 6, dt = 1
+[36mrunner00: [39m 0 Nonlinear |R| = [32m4.580461e+03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m4.580461e+03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.190384e-09[39m
+[36mrunner00: [39m 1 Nonlinear |R| = [32m5.761726e+02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m5.761726e+02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.163596e-10[39m
+[36mrunner00: [39m 2 Nonlinear |R| = [32m3.915658e+02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.915658e+02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.242357e-11[39m
+[36mrunner00: [39m 3 Nonlinear |R| = [32m3.874790e+01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.874790e+01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.169667e-12[39m
+[36mrunner00: [39m 4 Nonlinear |R| = [32m3.870789e+00[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.870789e+00[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.193551e-13[39m
+[36mrunner00: [39m 5 Nonlinear |R| = [32m3.870389e-01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.870389e-01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.258528e-14[39m
+[36mrunner00: [39m 6 Nonlinear |R| = [32m3.870350e-02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.870350e-02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.236571e-15[39m
+[36mrunner00: [39m 7 Nonlinear |R| = [32m3.870346e-03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.870346e-03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.220777e-16[39m
+[36mrunner00: [39m 8 Nonlinear |R| = [32m3.870345e-04[39m
+[36mrunner00: [39m[32m Solve Converged![39m
+[36mrunner00: [39m
+[36mrunner00: [39mOutlier Variable Residual Norms:
+[36mrunner00: [39m  pressure: [31m3.870345e-04[39m
+[36mrunner00: [39m
+[36mrunner00: [39mPostprocessor Values:
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m| time           | Re             | inlet-p        | outlet-p       |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m|   0.000000e+00 |   0.000000e+00 |   6.981537e+06 |   7.002980e+06 |
+[36mrunner00: [39m|   1.000000e+00 |   0.000000e+00 |   6.981537e+06 |   3.555600e+06 |
+[36mrunner00: [39m|   2.000000e+00 |   7.471467e-01 |   6.962201e+06 |   1.376856e+06 |
+[36mrunner00: [39m|   3.000000e+00 |   9.550801e-01 |   6.905193e+06 |   6.184320e+05 |
+[36mrunner00: [39m|   4.000000e+00 |   9.593873e-01 |   6.807981e+06 |   3.081680e+05 |
+[36mrunner00: [39m|   5.000000e+00 |   9.302610e-01 |   6.679968e+06 |   2.047460e+05 |
+[36mrunner00: [39m|   6.000000e+00 |   8.917751e-01 |   6.533883e+06 |   1.426940e+05 |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m
+[32m Solve Skipped![39m
+
+Time Step 7, time = 7, dt = 1
+[36mrunner00: [39m
+[36mrunner00: [39mTime Step 7, time = 7, dt = 1
+[36mrunner00: [39m 0 Nonlinear |R| = [32m2.080249e+03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.080249e+03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.069978e-09[39m
+[36mrunner00: [39m 1 Nonlinear |R| = [32m4.149090e+00[39m
+[36mrunner00: [39m      0 Linear |R| = [32m4.149090e+00[39m
+[36mrunner00: [39m      1 Linear |R| = [32m9.740729e-11[39m
+[36mrunner00: [39m 2 Nonlinear |R| = [32m4.106324e-01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m4.106324e-01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m9.797089e-12[39m
+[36mrunner00: [39m 3 Nonlinear |R| = [32m4.102262e-02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m4.102262e-02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m9.612526e-13[39m
+[36mrunner00: [39m 4 Nonlinear |R| = [32m4.101858e-03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m4.101858e-03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m1.006144e-13[39m
+[36mrunner00: [39m 5 Nonlinear |R| = [32m4.101817e-04[39m
+[36mrunner00: [39m[32m Solve Converged![39m
+[36mrunner00: [39m
+[36mrunner00: [39mOutlier Variable Residual Norms:
+[36mrunner00: [39m  pressure: [31m4.101817e-04[39m
+[36mrunner00: [39m
+[36mrunner00: [39mPostprocessor Values:
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m| time           | Re             | inlet-p        | outlet-p       |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m|   0.000000e+00 |   0.000000e+00 |   6.981537e+06 |   7.002980e+06 |
+[36mrunner00: [39m|   1.000000e+00 |   0.000000e+00 |   6.981537e+06 |   3.555600e+06 |
+[36mrunner00: [39m|   2.000000e+00 |   7.471467e-01 |   6.962201e+06 |   1.376856e+06 |
+[36mrunner00: [39m|   3.000000e+00 |   9.550801e-01 |   6.905193e+06 |   6.184320e+05 |
+[36mrunner00: [39m|   4.000000e+00 |   9.593873e-01 |   6.807981e+06 |   3.081680e+05 |
+[36mrunner00: [39m|   5.000000e+00 |   9.302610e-01 |   6.679968e+06 |   2.047460e+05 |
+[36mrunner00: [39m|   6.000000e+00 |   8.917751e-01 |   6.533883e+06 |   1.426940e+05 |
+[36mrunner00: [39m|   7.000000e+00 |   8.516697e-01 |   6.380786e+06 |   1.151150e+05 |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m
+[32m Solve Skipped![39m
+
+Time Step 8, time = 8, dt = 1
+[36mrunner00: [39m
+[36mrunner00: [39mTime Step 8, time = 8, dt = 1
+[36mrunner00: [39m 0 Nonlinear |R| = [32m6.739880e+02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m6.739880e+02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m9.352207e-10[39m
+[36mrunner00: [39m 1 Nonlinear |R| = [32m3.170227e+02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.170227e+02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m9.368342e-11[39m
+[36mrunner00: [39m 2 Nonlinear |R| = [32m3.111741e+01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.111741e+01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m8.717255e-12[39m
+[36mrunner00: [39m 3 Nonlinear |R| = [32m3.106058e+00[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.106058e+00[39m
+[36mrunner00: [39m      1 Linear |R| = [32m9.077613e-13[39m
+[36mrunner00: [39m 4 Nonlinear |R| = [32m3.105491e-01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.105491e-01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m9.027918e-14[39m
+[36mrunner00: [39m 5 Nonlinear |R| = [32m3.105435e-02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.105435e-02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m9.097416e-15[39m
+[36mrunner00: [39m 6 Nonlinear |R| = [32m3.105429e-03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m3.105429e-03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m8.950024e-16[39m
+[36mrunner00: [39m 7 Nonlinear |R| = [32m3.105428e-04[39m
+[36mrunner00: [39m[32m Solve Converged![39m
+[36mrunner00: [39m
+[36mrunner00: [39mOutlier Variable Residual Norms:
+[36mrunner00: [39m  pressure: [31m3.105428e-04[39m
+[36mrunner00: [39m
+[36mrunner00: [39mPostprocessor Values:
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m| time           | Re             | inlet-p        | outlet-p       |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m|   0.000000e+00 |   0.000000e+00 |   6.981537e+06 |   7.002980e+06 |
+[36mrunner00: [39m|   1.000000e+00 |   0.000000e+00 |   6.981537e+06 |   3.555600e+06 |
+[36mrunner00: [39m|   2.000000e+00 |   7.471467e-01 |   6.962201e+06 |   1.376856e+06 |
+[36mrunner00: [39m|   3.000000e+00 |   9.550801e-01 |   6.905193e+06 |   6.184320e+05 |
+[36mrunner00: [39m|   4.000000e+00 |   9.593873e-01 |   6.807981e+06 |   3.081680e+05 |
+[36mrunner00: [39m|   5.000000e+00 |   9.302610e-01 |   6.679968e+06 |   2.047460e+05 |
+[36mrunner00: [39m|   6.000000e+00 |   8.917751e-01 |   6.533883e+06 |   1.426940e+05 |
+[36mrunner00: [39m|   7.000000e+00 |   8.516697e-01 |   6.380786e+06 |   1.151150e+05 |
+[36mrunner00: [39m|   8.000000e+00 |   8.122384e-01 |   6.228522e+06 |   1.082200e+05 |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m
+[32m Solve Skipped![39m
+
+Time Step 9, time = 9, dt = 1
+[36mrunner00: [39m
+[36mrunner00: [39mTime Step 9, time = 9, dt = 1
+[36mrunner00: [39m 0 Nonlinear |R| = [32m2.053465e+01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.053465e+01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m8.461808e-10[39m
+[36mrunner00: [39m 1 Nonlinear |R| = [32m2.068124e+00[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.068124e+00[39m
+[36mrunner00: [39m      1 Linear |R| = [32m7.987400e-11[39m
+[36mrunner00: [39m 2 Nonlinear |R| = [32m2.069626e-01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.069626e-01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m8.070807e-12[39m
+[36mrunner00: [39m 3 Nonlinear |R| = [32m2.069777e-02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.069777e-02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m8.086016e-13[39m
+[36mrunner00: [39m 4 Nonlinear |R| = [32m2.069792e-03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.069792e-03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m8.099158e-14[39m
+[36mrunner00: [39m 5 Nonlinear |R| = [32m2.069794e-04[39m
+[36mrunner00: [39m[32m Solve Converged![39m
+[36mrunner00: [39m
+[36mrunner00: [39mOutlier Variable Residual Norms:
+[36mrunner00: [39m  pressure: [31m2.069794e-04[39m
+[36mrunner00: [39m
+[36mrunner00: [39mPostprocessor Values:
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m| time           | Re             | inlet-p        | outlet-p       |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m|   0.000000e+00 |   0.000000e+00 |   6.981537e+06 |   7.002980e+06 |
+[36mrunner00: [39m|   1.000000e+00 |   0.000000e+00 |   6.981537e+06 |   3.555600e+06 |
+[36mrunner00: [39m|   2.000000e+00 |   7.471467e-01 |   6.962201e+06 |   1.376856e+06 |
+[36mrunner00: [39m|   3.000000e+00 |   9.550801e-01 |   6.905193e+06 |   6.184320e+05 |
+[36mrunner00: [39m|   4.000000e+00 |   9.593873e-01 |   6.807981e+06 |   3.081680e+05 |
+[36mrunner00: [39m|   5.000000e+00 |   9.302610e-01 |   6.679968e+06 |   2.047460e+05 |
+[36mrunner00: [39m|   6.000000e+00 |   8.917751e-01 |   6.533883e+06 |   1.426940e+05 |
+[36mrunner00: [39m|   7.000000e+00 |   8.516697e-01 |   6.380786e+06 |   1.151150e+05 |
+[36mrunner00: [39m|   8.000000e+00 |   8.122384e-01 |   6.228522e+06 |   1.082200e+05 |
+[36mrunner00: [39m|   9.000000e+00 |   7.747653e-01 |   6.081769e+06 |   1.082200e+05 |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m
+[32m Solve Skipped![39m
+
+Time Step 10, time = 10, dt = 1
+[36mrunner00: [39m
+[36mrunner00: [39mTime Step 10, time = 10, dt = 1
+[36mrunner00: [39m 0 Nonlinear |R| = [32m6.669427e+02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m6.669427e+02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m7.406305e-10[39m
+[36mrunner00: [39m 1 Nonlinear |R| = [32m2.789733e+02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.789733e+02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m7.761938e-11[39m
+[36mrunner00: [39m 2 Nonlinear |R| = [32m2.772345e+01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.772345e+01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m7.278548e-12[39m
+[36mrunner00: [39m 3 Nonlinear |R| = [32m2.770617e+00[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.770617e+00[39m
+[36mrunner00: [39m      1 Linear |R| = [32m7.767013e-13[39m
+[36mrunner00: [39m 4 Nonlinear |R| = [32m2.770444e-01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.770444e-01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m7.665786e-14[39m
+[36mrunner00: [39m 5 Nonlinear |R| = [32m2.770427e-02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.770427e-02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m7.681141e-15[39m
+[36mrunner00: [39m 6 Nonlinear |R| = [32m2.770425e-03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m2.770425e-03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m7.648997e-16[39m
+[36mrunner00: [39m 7 Nonlinear |R| = [32m2.770425e-04[39m
+[36mrunner00: [39m[32m Solve Converged![39m
+[36mrunner00: [39m
+[36mrunner00: [39mOutlier Variable Residual Norms:
+[36mrunner00: [39m  pressure: [31m2.770425e-04[39m
+[36mrunner00: [39m
+[36mrunner00: [39mPostprocessor Values:
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m| time           | Re             | inlet-p        | outlet-p       |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m|   0.000000e+00 |   0.000000e+00 |   6.981537e+06 |   7.002980e+06 |
+[36mrunner00: [39m|   1.000000e+00 |   0.000000e+00 |   6.981537e+06 |   3.555600e+06 |
+[36mrunner00: [39m|   2.000000e+00 |   7.471467e-01 |   6.962201e+06 |   1.376856e+06 |
+[36mrunner00: [39m|   3.000000e+00 |   9.550801e-01 |   6.905193e+06 |   6.184320e+05 |
+[36mrunner00: [39m|   4.000000e+00 |   9.593873e-01 |   6.807981e+06 |   3.081680e+05 |
+[36mrunner00: [39m|   5.000000e+00 |   9.302610e-01 |   6.679968e+06 |   2.047460e+05 |
+[36mrunner00: [39m|   6.000000e+00 |   8.917751e-01 |   6.533883e+06 |   1.426940e+05 |
+[36mrunner00: [39m|   7.000000e+00 |   8.516697e-01 |   6.380786e+06 |   1.151150e+05 |
+[36mrunner00: [39m|   8.000000e+00 |   8.122384e-01 |   6.228522e+06 |   1.082200e+05 |
+[36mrunner00: [39m|   9.000000e+00 |   7.747653e-01 |   6.081769e+06 |   1.082200e+05 |
+[36mrunner00: [39m|   1.000000e+01 |   7.398866e-01 |   5.942718e+06 |   1.013250e+05 |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m
+[32m Solve Skipped![39m
+
+Time Step 11, time = 11, dt = 1
+[36mrunner00: [39m
+[36mrunner00: [39mTime Step 11, time = 11, dt = 1
+[36mrunner00: [39m 0 Nonlinear |R| = [32m1.779417e+01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.779417e+01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m6.602760e-10[39m
+[36mrunner00: [39m 1 Nonlinear |R| = [32m1.787105e+00[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.787105e+00[39m
+[36mrunner00: [39m      1 Linear |R| = [32m6.970196e-11[39m
+[36mrunner00: [39m 2 Nonlinear |R| = [32m1.787900e-01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.787900e-01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m6.586689e-12[39m
+[36mrunner00: [39m 3 Nonlinear |R| = [32m1.787980e-02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.787980e-02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m6.719140e-13[39m
+[36mrunner00: [39m 4 Nonlinear |R| = [32m1.787988e-03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.787988e-03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m7.094574e-14[39m
+[36mrunner00: [39m 5 Nonlinear |R| = [32m1.787989e-04[39m
+[36mrunner00: [39m[32m Solve Converged![39m
+[36mrunner00: [39m
+[36mrunner00: [39mOutlier Variable Residual Norms:
+[36mrunner00: [39m  pressure: [31m1.787989e-04[39m
+[36mrunner00: [39m
+[36mrunner00: [39mPostprocessor Values:
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m| time           | Re             | inlet-p        | outlet-p       |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m|   0.000000e+00 |   0.000000e+00 |   6.981537e+06 |   7.002980e+06 |
+[36mrunner00: [39m|   1.000000e+00 |   0.000000e+00 |   6.981537e+06 |   3.555600e+06 |
+[36mrunner00: [39m|   2.000000e+00 |   7.471467e-01 |   6.962201e+06 |   1.376856e+06 |
+[36mrunner00: [39m|   3.000000e+00 |   9.550801e-01 |   6.905193e+06 |   6.184320e+05 |
+[36mrunner00: [39m|   4.000000e+00 |   9.593873e-01 |   6.807981e+06 |   3.081680e+05 |
+[36mrunner00: [39m|   5.000000e+00 |   9.302610e-01 |   6.679968e+06 |   2.047460e+05 |
+[36mrunner00: [39m|   6.000000e+00 |   8.917751e-01 |   6.533883e+06 |   1.426940e+05 |
+[36mrunner00: [39m|   7.000000e+00 |   8.516697e-01 |   6.380786e+06 |   1.151150e+05 |
+[36mrunner00: [39m|   8.000000e+00 |   8.122384e-01 |   6.228522e+06 |   1.082200e+05 |
+[36mrunner00: [39m|   9.000000e+00 |   7.747653e-01 |   6.081769e+06 |   1.082200e+05 |
+[36mrunner00: [39m|   1.000000e+01 |   7.398866e-01 |   5.942718e+06 |   1.013250e+05 |
+[36mrunner00: [39m|   1.100000e+01 |   7.079100e-01 |   5.811979e+06 |   1.013250e+05 |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m
+[32m Solve Skipped![39m
+
+Time Step 12, time = 12, dt = 1
+[36mrunner00: [39m
+[36mrunner00: [39mTime Step 12, time = 12, dt = 1
+[36mrunner00: [39m 0 Nonlinear |R| = [32m1.699726e+01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.699726e+01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m6.880800e-10[39m
+[36mrunner00: [39m 1 Nonlinear |R| = [32m1.704562e+00[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.704562e+00[39m
+[36mrunner00: [39m      1 Linear |R| = [32m6.436991e-11[39m
+[36mrunner00: [39m 2 Nonlinear |R| = [32m1.705065e-01[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.705065e-01[39m
+[36mrunner00: [39m      1 Linear |R| = [32m6.540449e-12[39m
+[36mrunner00: [39m 3 Nonlinear |R| = [32m1.705116e-02[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.705116e-02[39m
+[36mrunner00: [39m      1 Linear |R| = [32m6.366245e-13[39m
+[36mrunner00: [39m 4 Nonlinear |R| = [32m1.705121e-03[39m
+[36mrunner00: [39m      0 Linear |R| = [32m1.705121e-03[39m
+[36mrunner00: [39m      1 Linear |R| = [32m6.404990e-14[39m
+[36mrunner00: [39m 5 Nonlinear |R| = [32m1.705122e-04[39m
+[36mrunner00: [39m[32m Solve Converged![39m
+[36mrunner00: [39m
+[36mrunner00: [39mOutlier Variable Residual Norms:
+[36mrunner00: [39m  pressure: [31m1.705122e-04[39m
+[36mrunner00: [39m
+[36mrunner00: [39mPostprocessor Values:
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m| time           | Re             | inlet-p        | outlet-p       |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m|   0.000000e+00 |   0.000000e+00 |   6.981537e+06 |   7.002980e+06 |
+[36mrunner00: [39m|   1.000000e+00 |   0.000000e+00 |   6.981537e+06 |   3.555600e+06 |
+[36mrunner00: [39m|   2.000000e+00 |   7.471467e-01 |   6.962201e+06 |   1.376856e+06 |
+[36mrunner00: [39m|   3.000000e+00 |   9.550801e-01 |   6.905193e+06 |   6.184320e+05 |
+[36mrunner00: [39m|   4.000000e+00 |   9.593873e-01 |   6.807981e+06 |   3.081680e+05 |
+[36mrunner00: [39m|   5.000000e+00 |   9.302610e-01 |   6.679968e+06 |   2.047460e+05 |
+[36mrunner00: [39m|   6.000000e+00 |   8.917751e-01 |   6.533883e+06 |   1.426940e+05 |
+[36mrunner00: [39m|   7.000000e+00 |   8.516697e-01 |   6.380786e+06 |   1.151150e+05 |
+[36mrunner00: [39m|   8.000000e+00 |   8.122384e-01 |   6.228522e+06 |   1.082200e+05 |
+[36mrunner00: [39m|   9.000000e+00 |   7.747653e-01 |   6.081769e+06 |   1.082200e+05 |
+[36mrunner00: [39m|   1.000000e+01 |   7.398866e-01 |   5.942718e+06 |   1.013250e+05 |
+[36mrunner00: [39m|   1.100000e+01 |   7.079100e-01 |   5.811979e+06 |   1.013250e+05 |
+[36mrunner00: [39m|   1.200000e+01 |   6.784131e-01 |   5.689298e+06 |   1.013250e+05 |
+[36mrunner00: [39m+----------------+----------------+----------------+----------------+
+[36mrunner00: [39m

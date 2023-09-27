@@ -40,6 +40,29 @@ ReynoldsNumberFunctorAux::ReynoldsNumberFunctorAux(const InputParameters & param
     mooseError("This AuxKernel only supports Elemental fields");
 }
 
+// Real
+// ReynoldsNumberFunctorAux::computeValue()
+// {
+//   using MetaPhysicL::raw_value;
+//   if (_use_qp_arg)
+//   {
+//     const auto qp_arg = std::make_tuple(_current_elem, _qp, _qrule);
+//     // std::cout << "Density: " << raw_value(_rho(qp_arg)) << std::endl;
+//     // std::cout << "Elem Size Gap: " << _current_elem->hmin() << std::endl;
+//     // std::cout << "Velocity: " << raw_value(_speed(qp_arg)) << std::endl;
+//     // std::cout << "Viscosity: " << aw_value(_mu(qp_arg)) << std::endl;
+//     return _current_elem->hmax() * raw_value(_rho(qp_arg)) * raw_value(_speed(qp_arg)) /
+//            raw_value(_mu(qp_arg));
+//   }
+//   else
+//   {
+//     const auto elem_arg = makeElemArg(_current_elem);
+//     return _current_elem->hmax() * raw_value(_rho(elem_arg)) * raw_value(_speed(elem_arg)) /
+//            raw_value(_mu(elem_arg));
+//   }
+// }
+
+
 Real
 ReynoldsNumberFunctorAux::computeValue()
 {
@@ -47,7 +70,11 @@ ReynoldsNumberFunctorAux::computeValue()
   if (_use_qp_arg)
   {
     const auto qp_arg = std::make_tuple(_current_elem, _qp, _qrule);
-    return _current_elem->hmax() * raw_value(_rho(qp_arg)) * raw_value(_speed(qp_arg)) /
+    // std::cout << "Density: " << raw_value(_rho(qp_arg)) << std::endl;
+    // std::cout << "Elem Size Gap: " << _current_elem->hmin() << std::endl;
+    // std::cout << "Velocity: " << raw_value(_speed(qp_arg)) << std::endl;
+    // std::cout << "Viscosity: " << aw_value(_mu(qp_arg)) << std::endl;
+    return 0.00834 * raw_value(_rho(qp_arg)) * raw_value(_speed(qp_arg)) /
            raw_value(_mu(qp_arg));
   }
   else

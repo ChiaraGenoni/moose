@@ -1,0 +1,231 @@
+Sat Sep 23 14:52:02 MDT 2023
+/home/genoc/projects/moose/smashed_pellets/V&V/TT1_Darcy/1000psi
+48
+Framework Information:
+MOOSE Version:           git commit a96cca0a04 on 2023-03-17
+LibMesh Version:         14633497ea867c56053d1ea7a1fbe0442727eb24
+PETSc Version:           3.16.5
+SLEPc Version:           3.16.2
+Current Time:            Sat Sep 23 14:52:08 2023
+Executable Timestamp:    Tue Aug 15 15:42:44 2023
+
+Parallelism:
+  Num Processors:          48
+  Num Threads:             1
+
+Mesh: 
+  Parallel Type:           replicated
+  Mesh Dimension:          1
+  Spatial Dimension:       1
+  Nodes:                   
+    Total:                 2
+    Local:                 2
+    Min/Max/Avg:           0/2/0
+  Elems:                   
+    Total:                 1
+    Local:                 1
+    Min/Max/Avg:           0/1/0
+  Num Subdomains:          1
+  Num Partitions:          1
+  Partitioner:             metis
+
+Execution Information:
+  Executioner:             Steady
+  Solver Mode:             Preconditioned JFNK
+
+[36mstochastic00: [39m
+[36mstochastic00: [39m
+[36mstochastic00: [39mActive Materials:
+[36mstochastic00: [39m    Subdomain:  (0)
+[36mstochastic00: [39m      Material Name:       drho_dt
+[36mstochastic00: [39m      Property Names:      
+[36mstochastic00: [39m      Material Name:       factor_porous
+[36mstochastic00: [39m      Property Names:      
+[36mstochastic00: [39m      Material Name:       sutherland_mu
+[36mstochastic00: [39m      Property Names:      
+[36mstochastic00: [39m
+[36mstochastic00: [39m    Active Face Materials:
+[36mstochastic00: [39m                           
+[36mstochastic00: [39mActive Neighboring Materials:
+[36mstochastic00: [39m                           
+[36mstochastic00: [39mActive Boundary Materials:
+[36mstochastic00: [39m                           
+[36mstochastic00: [39mParallelism:
+[36mstochastic00: [39m  Num Processors:          2
+[36mstochastic00: [39m  Num Threads:             1
+[36mstochastic00: [39m
+[36mstochastic00: [39mMesh: 
+[36mstochastic00: [39m  Parallel Type:           replicated
+[36mstochastic00: [39m  Mesh Dimension:          2
+[36mstochastic00: [39m  Spatial Dimension:       2
+[36mstochastic00: [39m  Nodes:                   
+[36mstochastic00: [39m    Total:                 2651
+[36mstochastic00: [39m    Local:                 1331
+[36mstochastic00: [39m    Min/Max/Avg:           1320/1331/1325
+[36mstochastic00: [39m  Elems:                   
+[36mstochastic00: [39m    Total:                 2400
+[36mstochastic00: [39m    Local:                 1200
+[36mstochastic00: [39m    Min/Max/Avg:           1200/1200/1200
+[36mstochastic00: [39m  Num Subdomains:          1
+[36mstochastic00: [39m  Num Partitions:          2
+[36mstochastic00: [39m  Partitioner:             metis
+[36mstochastic00: [39m
+[36mstochastic00: [39mNonlinear System:
+[36mstochastic00: [39m  Num DOFs:                7200
+[36mstochastic00: [39m  Num Local DOFs:          3600
+[36mstochastic00: [39m  Variables:               { "superficial_vel_x" "superficial_vel_y" "pressure" } 
+[36mstochastic00: [39m  Finite Element Types:    "MONOMIAL" 
+[36mstochastic00: [39m  Approximation Orders:    "CONSTANT" 
+[36mstochastic00: [39m
+[36mstochastic00: [39mAuxiliary System:
+[36mstochastic00: [39m  Num DOFs:                9600
+[36mstochastic00: [39m  Num Local DOFs:          4800
+[36mstochastic00: [39m  Variables:               { "velocity_norm" "porosity_var" "viscosity_var" "Reynolds" } 
+[36mstochastic00: [39m  Finite Element Types:    "MONOMIAL" 
+[36mstochastic00: [39m  Approximation Orders:    "CONSTANT" 
+[36mstochastic00: [39m
+[36mstochastic00: [39mExecution Information:
+[36mstochastic00: [39m  Executioner:             Transient
+[36mstochastic00: [39m  TimeStepper:             ConstantDT
+[36mstochastic00: [39m  TimeIntegrator:          ImplicitEuler
+[36mstochastic00: [39m  Solver Mode:             NEWTON
+[36mstochastic00: [39m  MOOSE Preconditioner:    SMP (auto)
+[36mstochastic00: [39m
+
+[33m
+*** Warning ***
+/home/genoc/projects/moose/smashed_pellets/V&V/TT1_Darcy/1000psi/model_pellets.i:1: unused parameter 'viscosity'
+/home/genoc/projects/moose/smashed_pellets/V&V/TT1_Darcy/1000psi/model_pellets.i:7: unused parameter 'pellet_radius'
+/home/genoc/projects/moose/smashed_pellets/V&V/TT1_Darcy/1000psi/model_pellets.i:10: unused parameter 'height_plenum'
+/home/genoc/projects/moose/smashed_pellets/V&V/TT1_Darcy/1000psi/model_pellets.i:12: unused parameter 'porosity_gap'
+/home/genoc/projects/moose/smashed_pellets/V&V/TT1_Darcy/1000psi/model_pellets.i:55: unused parameter 'UserObjects/rc/smoothing_layers'
+/home/genoc/projects/moose/smashed_pellets/V&V/TT1_Darcy/1000psi/model_pellets.i:150: unused parameter 'FVKernels/mass_time/porosity'
+/home/genoc/projects/moose/smashed_pellets/V&V/TT1_Darcy/1000psi/model_pellets.i:193: unused parameter 'FVKernels/u_porous_friction/porosity'
+/home/genoc/projects/moose/smashed_pellets/V&V/TT1_Darcy/1000psi/model_pellets.i:229: unused parameter 'FVKernels/v_porous_friction/porosity'
+[39m
+[36mstochastic00: [39m
+[36mstochastic00: [39mTime Step 0, time = 0
+[36mstochastic00: [39m
+[36mstochastic00: [39mPostprocessor Values:
+[36mstochastic00: [39m+----------------+----------------+----------------+----------------+----------------+
+[36mstochastic00: [39m| time           | Re             | inlet-p        | outlet-p       | time           |
+[36mstochastic00: [39m+----------------+----------------+----------------+----------------+----------------+
+[36mstochastic00: [39m|   0.000000e+00 |   0.000000e+00 |   7.002980e+06 |   7.002980e+06 |   0.000000e+00 |
+[36mstochastic00: [39m+----------------+----------------+----------------+----------------+----------------+
+[36mstochastic00: [39m
+[36mstochastic00: [39m
+[36mstochastic00: [39m
+[36mstochastic00: [39mConsumed Material Properties:
+[36mstochastic00: [39m                           
+[36mstochastic00: [39m
+[36mstochastic00: [39mTime Step 1, time = 0.1, dt = 0.1
+[36mstochastic00: [39m
+[36mstochastic00: [39mPerforming automatic scaling calculation
+[36mstochastic00: [39m
+[36mstochastic00: [39m 0 Nonlinear |R| = [32m3.072912e+05[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m3.072912e+05[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m7.540464e-10[39m
+[36mstochastic00: [39m 1 Nonlinear |R| = [32m5.009529e+04[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m5.009529e+04[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m3.898888e-11[39m
+[36mstochastic00: [39m 2 Nonlinear |R| = [32m2.142799e+03[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m2.142799e+03[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m4.457363e-12[39m
+[36mstochastic00: [39m 3 Nonlinear |R| = [32m2.094048e+02[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m2.094048e+02[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m5.363060e-13[39m
+[36mstochastic00: [39m 4 Nonlinear |R| = [32m2.092906e+01[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m2.092906e+01[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m4.920875e-14[39m
+[36mstochastic00: [39m 5 Nonlinear |R| = [32m2.092791e+00[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m2.092791e+00[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m6.051495e-15[39m
+[36mstochastic00: [39m 6 Nonlinear |R| = [32m2.092779e-01[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m2.092779e-01[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m5.706890e-16[39m
+[36mstochastic00: [39m 7 Nonlinear |R| = [32m2.092778e-02[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m2.092778e-02[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m5.233886e-17[39m
+[36mstochastic00: [39m 8 Nonlinear |R| = [32m2.092778e-03[39m
+[36mstochastic00: [39mFinished Solving                                                                         [[33m  5.20 s[39m] [[33m   35 MB[39m]
+[36mstochastic00: [39m[32m Solve Converged![39m
+[36mstochastic00: [39m
+[36mstochastic00: [39mOutlier Variable Residual Norms:
+[36mstochastic00: [39m  pressure: [31m2.092778e-03[39m
+[36mstochastic00: [39m
+[36mstochastic00: [39mPostprocessor Values:
+[36mstochastic00: [39m+----------------+----------------+----------------+----------------+----------------+
+[36mstochastic00: [39m| time           | Re             | inlet-p        | outlet-p       | time           |
+[36mstochastic00: [39m+----------------+----------------+----------------+----------------+----------------+
+[36mstochastic00: [39m|   0.000000e+00 |   0.000000e+00 |   7.002980e+06 |   7.002980e+06 |   0.000000e+00 |
+[36mstochastic00: [39m|   1.000000e-01 |   0.000000e+00 |   7.002980e+06 |   6.658242e+06 |   1.000000e-01 |
+[36mstochastic00: [39m+----------------+----------------+----------------+----------------+----------------+
+[36mstochastic00: [39m
+[36mstochastic00: [39m
+[36mstochastic00: [39mTime Step 2, time = 0.2, dt = 0.1
+[36mstochastic00: [39m 0 Nonlinear |R| = [32m2.673435e+05[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m2.673435e+05[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m9.055207e-10[39m
+[36mstochastic00: [39m 1 Nonlinear |R| = [32m3.954585e+04[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m3.954585e+04[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m3.869432e-11[39m
+[36mstochastic00: [39m 2 Nonlinear |R| = [32m5.071933e+03[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m5.071933e+03[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m1.936582e-12[39m
+[36mstochastic00: [39m 3 Nonlinear |R| = [32m5.166860e+02[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m5.166860e+02[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m1.721690e-13[39m
+[36mstochastic00: [39m 4 Nonlinear |R| = [32m5.183131e+01[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m5.183131e+01[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m2.668992e-14[39m
+[36mstochastic00: [39m 5 Nonlinear |R| = [32m5.184764e+00[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m5.184764e+00[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m2.817488e-15[39m
+[36mstochastic00: [39m 6 Nonlinear |R| = [32m5.184927e-01[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m5.184927e-01[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m3.293787e-16[39m
+[36mstochastic00: [39m 7 Nonlinear |R| = [32m5.184943e-02[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m5.184943e-02[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m2.704450e-17[39m
+[36mstochastic00: [39m 8 Nonlinear |R| = [32m5.184945e-03[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m5.184945e-03[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m2.912307e-18[39m
+[36mstochastic00: [39m 9 Nonlinear |R| = [32m5.184948e-04[39m
+[36mstochastic00: [39mFinished Solving                                                                         [[33m  5.47 s[39m] [[33m    0 MB[39m]
+[36mstochastic00: [39m[32m Solve Converged![39m
+[36mstochastic00: [39m
+[36mstochastic00: [39mOutlier Variable Residual Norms:
+[36mstochastic00: [39m  pressure: [31m5.184948e-04[39m
+[36mstochastic00: [39m
+[36mstochastic00: [39mPostprocessor Values:
+[36mstochastic00: [39m+----------------+----------------+----------------+----------------+----------------+
+[36mstochastic00: [39m| time           | Re             | inlet-p        | outlet-p       | time           |
+[36mstochastic00: [39m+----------------+----------------+----------------+----------------+----------------+
+[36mstochastic00: [39m|   0.000000e+00 |   0.000000e+00 |   7.002980e+06 |   7.002980e+06 |   0.000000e+00 |
+[36mstochastic00: [39m|   1.000000e-01 |   0.000000e+00 |   7.002980e+06 |   6.658242e+06 |   1.000000e-01 |
+[36mstochastic00: [39m|   2.000000e-01 |   3.469157e-01 |   7.002903e+06 |   6.313504e+06 |   2.000000e-01 |
+[36mstochastic00: [39m+----------------+----------------+----------------+----------------+----------------+
+[36mstochastic00: [39m
+[36mstochastic00: [39m
+[36mstochastic00: [39mTime Step 3, time = 0.3, dt = 0.1
+[36mstochastic00: [39m 0 Nonlinear |R| = [32m2.440767e+05[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m2.440767e+05[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m9.595979e-10[39m
+[36mstochastic00: [39m 1 Nonlinear |R| = [32m3.521366e+04[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m3.521366e+04[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m5.586233e-11[39m
+[36mstochastic00: [39m 2 Nonlinear |R| = [32m4.335877e+03[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m4.335877e+03[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m4.445741e-12[39m
+[36mstochastic00: [39m 3 Nonlinear |R| = [32m4.306082e+02[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m4.306082e+02[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m3.341956e-13[39m
+[36mstochastic00: [39m 4 Nonlinear |R| = [32m4.316666e+01[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m4.316666e+01[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m4.475727e-14[39m
+[36mstochastic00: [39m 5 Nonlinear |R| = [32m4.317728e+00[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m4.317728e+00[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m4.021476e-15[39m
+[36mstochastic00: [39m 6 Nonlinear |R| = [32m4.317834e-01[39m
+[36mstochastic00: [39m      0 Linear |R| = [32m4.317834e-01[39m
+[36mstochastic00: [39m      1 Linear |R| = [32m3.408221e-16[39m
